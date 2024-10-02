@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:learn/widgets/app_button.dart';
-import 'package:learn/widgets/app_text_button.dart';
 
 import 'screens/splash_page/splash_page.dart';
 

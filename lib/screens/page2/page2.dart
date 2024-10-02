@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:learn/widgets/app_button.dart';
 import 'package:learn/widgets/app_text.dart';
 
-class SecondPage extends StatefulWidget {
+class Page2 extends StatefulWidget {
   final int number;
-  const SecondPage({
+  const Page2({
     super.key,
     required this.number,
   });
 
   @override
-  State<SecondPage> createState() => _SecondPageState();
+  State<Page2> createState() => _Page2State();
 }
 
-class _SecondPageState extends State<SecondPage> {
+class _Page2State extends State<Page2> {
   late int number;
 
   pluse() {
@@ -258,7 +258,7 @@ class _SecondPageState extends State<SecondPage> {
               ),
               Row(
                 children: [
-                  AppText(
+                  const AppText(
                     text: '1',
                     fontSize: 30,
                   ),
@@ -266,7 +266,7 @@ class _SecondPageState extends State<SecondPage> {
                     text: '*',
                     textColor: newColor,
                   ),
-                  AppText(
+                  const AppText(
                     text: '10',
                     fontSize: 30,
                   ),
@@ -274,7 +274,7 @@ class _SecondPageState extends State<SecondPage> {
                     text: '=',
                     textColor: newColor,
                   ),
-                  AppText(
+                  const AppText(
                     text: '10',
                     fontSize: 30,
                   ),

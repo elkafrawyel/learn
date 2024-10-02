@@ -1,28 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:learn/screens/first_page/first_page.dart';
+import 'package:learn/screens/page1/page1.dart';
+import 'package:learn/screens/home_page.dart';
+import 'package:learn/widgets/app_network_image.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => FirstPage(),
+          builder: (context) => const HomePage(),
         ),
       );
     });
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.orange,
       body: Center(
-        child: Text(
-          'Hello world',
-          style: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
+        child: Image.network(
+          'https://www.cdn.justshowbiz.net/wp-content/uploads/2020/01/dheeraj-dhoopar.jpg?strip=all&lossy=1&ssl=1',
+          height: 200,
+          width: 200,
         ),
       ),
     );
