@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:learn/screens/page1/data/person_model.dart';
-import 'package:learn/widgets/app_network_image.dart';
 import 'package:learn/widgets/app_text.dart';
 
 class Page1 extends StatelessWidget {

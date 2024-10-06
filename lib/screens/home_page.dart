@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn/screens/countries/countries_screen.dart';
 
 import '../widgets/app_button.dart';
 import 'page1/page1.dart';
@@ -33,6 +34,16 @@ class HomePage extends StatelessWidget {
                     builder: (context) => const Page2(
                       number: 1,
                     ),
+                  ),
+                );
+              },
+            ),
+            AppButton(
+              text: 'Countries',
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const CountriesScreen(),
                   ),
                 );
               },
